@@ -1,0 +1,290 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f9f5f0;
+    color: #4a3f35;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #8B5E3B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3.2em;
+    font-weight: 700;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, .active {
+    color: #d4a373;
+}
+
+/* Hero Section - Move Higher */
+.hero {
+    background: url('images/hero-bg.jpg') center/cover no-repeat;
+    height: 45vh; /* Reduce height slightly */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px; /* Reduce padding */
+}
+
+/* Welcome & Discover Text - Move Higher */
+.hero h2 {
+    font-size: 2.8em;
+    font-weight: 600;
+    color: #8B5E3B;
+    margin-bottom: 0px; /* Remove extra bottom space */
+}
+
+.hero .sub-heading {
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #8B5E3B;
+    margin-top: 0px; /* Remove extra top margin */
+}
+
+/* Featured Section - Move Higher */
+.featured {
+    text-align: center;
+    padding-top: 10px; /* Reduce top padding */
+}
+
+/* "Our Specialties" */
+.featured .sub-heading {
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #8B5E3B;
+    margin-bottom: 10px;
+}
+
+/* Products Section - Move Image Cards Higher */
+.products {
+    padding-top: 10px; /* Reduce padding to bring it up */
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2.3em;
+    color: #8B5E3B;
+    margin-bottom: 15px;
+}
+
+.image-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px; /* Reduced gap to make cards closer */
+}
+
+/* Product Cards */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 230px;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 8px 0;
+    font-size: 1.3em;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: #666;
+}
+
+.card .price {
+    display: block;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #d4a373;
+    margin-top: 8px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* About Page */
+.about {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    color: #8B5E3B;
+    margin-bottom: 20px;
+}
+
+/* About Page Image Card */
+.about-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.about-card img {
+    width: 70%; /* Slightly reduced size but still large */
+    max-width: 600px; /* Prevents it from getting too big */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.about-card img:hover {
+    transform: scale(1.05); /* Smooth hover effect */
+}
+
+/* Contact Page */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    color: #8B5E3B;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: #d4a373;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact button:hover {
+    background: #b37d50;
+}
+
+/* Footer */
+footer {
+    background-color: #8B5E3B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive Design - Mobile Optimization */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero .sub-heading {
+        font-size: 1.2em;
+    }
+
+    .products h2 {
+        font-size: 2em;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .about h2 {
+        font-size: 2em;
+    }
+
+    .about-card img {
+        width: 90%;
+    }
+
+    .contact h2 {
+        font-size: 2em;
+    }
+}
+/* Customize email link color */
+.email-link {
+    color: #8B5E3B; /* Brown color */
+    text-decoration: none;
+}
+
+.email-link:hover {
+    color: #d4a373; /* Light brown color on hover */
+}
